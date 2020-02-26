@@ -1,0 +1,159 @@
+body {
+    font-family: "Helvetica";
+}
+.grid {
+    display: grid;
+    grid-template-rows: (3, auto);   
+    grid-template-areas: "head"
+                         "mid"
+                         "foot";
+}
+header {
+    background-color: orangered;
+    display: grid;
+    grid-template-columns: 800px auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "share how account";
+    grid-area: head;
+    color: white;
+    grid-column-gap: 10px;
+}
+.Share {
+    grid-area: share;
+    text-transform: uppercase;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.shareicon {
+    width: 48px;
+    height: 48px;
+}
+
+.How {
+    grid-area: how;
+    align-self: center;
+}
+.account {
+    grid-area: account;
+    align-self: center;
+}
+.middle {
+    grid-area: mid;
+    display: grid;
+    width: 600px;
+    justify-self: center;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "row1 row1"
+                         "row2 row2"
+                         "box1 box2";
+    grid-column-gap: 100px;
+    text-align: center;
+}
+.row1{
+    grid-area: row1;
+    text-align: center;
+}
+.row2 {
+    grid-area: row2;
+    color: darkgrey;
+    text-align:center;
+}
+.box1 {
+    grid-area: box1;
+    justify-self: center;
+}
+.box2 {
+    grid-area: box2;
+    justify-self: center;
+}
+footer {
+    grid-area: foot;
+    display: grid;
+    width: 100%;
+    grid-template-columns:400px 400px;
+    grid-template-rows: auto 200px;
+    grid-template-areas: "row01 row01"
+                         "box01 box02";
+    justify-content: center;
+    align-self: center;
+    background-color: darkgrey;
+    grid-column-gap: 30px;
+    padding-bottom: 20px;
+}
+
+.row01{
+    grid-area: row01;
+    text-align: center;
+}
+.box01 {
+    grid-area: box01;
+    justify-self: center;
+    background-color: white;
+    padding: 10px;
+}
+.box02 {
+    grid-area: box02;
+    justify-self: center;
+    background-color: white;
+    padding: 10px;
+}
+/*
+.hello girls {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 30px;
+}
+*/
+.hello h4 {
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+/*    width: 120px;*/
+}
+h6 {
+    color: darkgrey;
+}
+.hello {
+    justify-self: center;
+}
+.house {
+    width:62.5px;
+    height: 62.5px;
+}
+.car {
+    width: 62.5px;
+    height: 62.5px;
+}
+h2 {
+    font-weight: 200;
+}
+.orange {
+    color: orangered;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
+}
+h3 {
+    color: orangered;
+    font-weight: 100;
+    font-size: 16px;
+}
+.bottom2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-left: 10px;
+}
+.bottom1 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 10px;
+}
+
+.girls, .boys {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 10px;
+}
